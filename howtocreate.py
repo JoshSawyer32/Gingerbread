@@ -32,4 +32,8 @@ async def on_ready():
 async def on_message(message):
     if message.content.startswith('$hi'):
       await message.channel.send(f"Hello {message.author.name}")
+    
+#Now we must run it using the token (found in dev portal)
+
+client.run("Your Token Here")
 
